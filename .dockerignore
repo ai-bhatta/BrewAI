@@ -1,0 +1,12 @@
+.git
+.venv
+venv
+node_modules
+__pycache__
+*.pyc
+*.sqlite3
+*.db
+backend/model
+tests
+playwright-report
+test-results

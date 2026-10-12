@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrewAI | AI Barista Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-overlay" class="game-overlay">
+    <div class="overlay-card">
+      <p class="eyebrow">Game Setup</p>
+      <h2 id="overlay-title">AI Barista Challenge</h2>
+      <p id="overlay-description" class="overlay-description">
+        Choose single player or two players, enter the barista names, then press start.
+        Once the timer begins, you have 30 seconds to serve as many correct orders as possible.
+        Highest score wins.
+      </p>
+
+      <div id="setup-panel" class="overlay-section">
+        <div class="player-mode" aria-label="Choose game mode">
+          <button id="game-mode-btn" class="mode-btn active" type="button">Game Mode</button>
+          <button id="rush-hour-mode-btn" class="mode-btn" type="button">Rush Hour</button>
+          <button id="ai-lab-mode-btn" class="mode-btn" type="button">AI Lab</button>
+          <button id="analytics-mode-btn" class="mode-btn" type="button">Analytics</button>
+        </div>
+        <div class="player-mode">
+          <button id="single-player-btn" class="mode-btn active" type="button">Single Player</button>
+          <button id="two-player-btn" class="mode-btn" type="button">Two Players</button>
+        </div>
+
+        <div class="name-grid">
+          <label class="name-field">
+            <span>Player 1 Name</span>
+            <input id="player-one-name" type="text" maxlength="24" placeholder="Enter player 1 name">
+          </label>
+          <label id="player-two-field" class="name-field hidden">
+            <span>Player 2 Name</span>
+            <input id="player-two-name" type="text" maxlength="24" placeholder="Enter player 2 name">
+          </label>
+        </div>
+
+        <div class="difficulty-settings">
+          <label class="adaptive-toggle">
+            <input id="adaptive-difficulty-toggle" type="checkbox" checked>
+            <span id="adaptive-difficulty-label">Adaptive Difficulty: ON</span>
+          </label>
+          <label class="name-field" for="adaptive-policy-select">
+            <span>Adaptive policy</span>
+            <select id="adaptive-policy-select">
+              <option value="heuristic">Heuristic baseline</option>
+              <option value="contextual_bandit">Contextual bandit</option>
+            </select>
+          </label>
+          <label class="name-field" for="selected-difficulty">
+            <span>Starting / fixed difficulty</span>
+            <select id="selected-difficulty">
+              <option value="easy">Easy</option>
+              <option value="normal" selected>Normal</option>
+              <option value="ambiguous">Ambiguous</option>
+              <option value="slang">Slang</option>
+              <option value="negation">Negation</option>
+              <option value="multi_clue">Multi-clue</option>
+            </select>
+          </label>
+          <p class="difficulty-help">When adaptive mode is off, the selected difficulty stays fixed.</p>
+        </div>
+
+        <button id="start-game-btn" class="primary-btn overlay-btn" type="button">Start Game</button>
+      </div>
+
+      <div id="turn-panel" class="overlay-section hidden">
+        <p id="turn-message" class="overlay-description"></p>
+        <button id="begin-turn-btn" class="primary-btn overlay-btn" type="button">Begin Turn</button>
+      </div>
+
+      <div id="results-panel" class="overlay-section hidden">
+        <div id="results-summary" class="results-summary"></div>
+        <button id="play-again-btn" class="primary-btn overlay-btn" type="button">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="app-shell">
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <p class="eyebrow">Your next shift starts here</p>
+        <h1>AI Barista Simulator</h1>
+        <p class="subtitle">
+          Listen close, build the drink they asked for, and beat the clock. Every customer brings a new recipe to get right.
+        </p>
+        <div class="hero-badges">
+          <span class="hero-badge">30-second rounds</span>
+          <span class="hero-badge">Single or two-player</span>
+          <span class="hero-badge">Progressive hints: 1-3 points</span>
+        </div>
+        <div class="service-status">
+          <span class="status-dot" id="status-dot"></span>
+          <span id="service-status-text">Checking AI backend...</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="../Avatar_1.png" alt="Pixel art barista avatar">
+      </div>
+    </section>
+
+    <section id="ai-lab" class="ai-lab hidden">
+      <div class="lab-heading">
+        <div>
+          <p class="eyebrow">Technical Mode</p>
+          <h2>AI Lab</h2>
+          <p class="subtitle">Compare the existing NLP approaches on the same request. Free-form results show agreement, not correctness.</p>
+        </div>
+        <button id="lab-back-btn" class="secondary-btn" type="button">Back to Game Setup</button>
+      </div>
+
+      <div class="lab-layout">
+        <section class="panel lab-input-panel">
+          <label class="name-field" for="lab-request-input">
+            <span>Customer request</span>
+            <textarea id="lab-request-input" rows="4" maxlength="1000" placeholder="Something strong, almond milk, not too sweet, no caramel."></textarea>
+          </label>
+          <div class="lab-prompt-list" id="lab-prompt-list" aria-label="Example prompts">
+            <button class="secondary-btn lab-prompt" type="button" data-example="normal">Normal</button>
+            <button class="secondary-btn lab-prompt" type="button" data-example="slang">Slang</button>
+            <button class="secondary-btn lab-prompt" type="button" data-example="negation">Negation</button>
+            <button class="secondary-btn lab-prompt" type="button" data-example="ambiguity">Ambiguous</button>
+            <button class="secondary-btn lab-prompt" type="button" data-example="multi_clue">Multi-clue</button>
+          </div>
+
+          <div class="lab-example-browser">
+            <p class="summary-label">Labeled robustness example</p>
+            <div class="lab-example-controls">
+              <label class="name-field" for="lab-category-filter">
+                <span>Category</span>
+                <select id="lab-category-filter"><option value="">Loading categories...</option></select>
+              </label>
+              <label class="name-field" for="lab-record-select">
+                <span>Example</span>
+                <select id="lab-record-select" disabled><option value="">Select a category first</option></select>
+              </label>
+            </div>
+            <button id="lab-load-example-btn" class="secondary-btn" type="button" disabled>Load Labeled Example</button>
+          </div>
+
+          <div class="lab-example-browser">
+            <p class="summary-label">Phase 5 wording diagnostic</p>
+            <div class="lab-example-controls">
+              <label class="name-field" for="lab-difficulty-select">
+                <span>Difficulty wording</span>
+                <select id="lab-difficulty-select">
+                  <option value="easy">Easy</option>
+                  <option value="normal">Normal</option>
+                  <option value="ambiguous">Ambiguous</option>
+                  <option value="slang">Slang</option>
+                  <option value="negation">Negation</option>
+                  <option value="multi_clue">Multi-clue</option>
+                </select>
+              </label>
+              <button id="lab-generate-difficulty-btn" class="secondary-btn" type="button">Generate Example</button>
+            </div>
+          </div>
+
+          <div class="lab-example-browser">
+            <p class="summary-label">Phase 10 local dialogue comparison</p>
+            <p class="lab-help">Compare deterministic template wording with optional loopback-only Ollama dialogue for this canonical recipe.</p>
+            <div class="lab-example-controls">
+              <label class="name-field"><span>Persona</span><select id="lab-generation-persona">
+                <option value="executive">Executive</option><option value="sleep_deprived_student">Sleep-Deprived Student</option>
+                <option value="influencer">Influencer</option><option value="coffee_snob" selected>Coffee Snob</option>
+                <option value="indecisive_customer">Indecisive Customer</option>
+              </select></label>
+              <label class="name-field"><span>Difficulty</span><select id="lab-generation-difficulty">
+                <option value="easy">Easy</option><option value="normal">Normal</option><option value="ambiguous">Ambiguous</option>
+                <option value="slang" selected>Slang</option><option value="negation">Negation</option><option value="multi_clue">Multi-clue</option>
+              </select></label>
+            </div>
+            <div class="lab-truth-fields">
+              <label class="name-field">Base<select data-generation-recipe="base"><option>espresso</option><option>cold brew</option><option>matcha</option><option>milk tea</option></select></label>
+              <label class="name-field">Milk<select data-generation-recipe="milk"><option>whole milk</option><option selected>oat milk</option><option>almond milk</option><option>none</option></select></label>
+              <label class="name-field">Sweetness<select data-generation-recipe="sweetness"><option>no sugar</option><option selected>light sugar</option><option>regular sugar</option><option>extra sweet</option></select></label>
+              <label class="name-field">Topping<select data-generation-recipe="topping"><option selected>boba</option><option>coffee jelly</option><option>foam</option><option>none</option></select></label>
+              <label class="name-field">Vibe<select data-generation-recipe="vibe"><option>classic</option><option selected>cozy</option><option>energetic</option><option>experimental</option></select></label>
+            </div>
+            <button id="lab-compare-generation-btn" class="secondary-btn" type="button">Compare wording</button>
+            <div id="lab-generation-comparison" class="lab-disagreements" aria-live="polite">Comparison has not been run.</div>
+          </div>
+
+          <label class="adaptive-toggle lab-truth-toggle">
+            <input id="lab-ground-truth-toggle" type="checkbox">
+            <span>Provide expected recipe</span>
+          </label>
+          <div id="lab-ground-truth-fields" class="lab-truth-fields hidden">
+            <label class="name-field">Base<select data-truth="base"><option>espresso</option><option>cold brew</option><option>matcha</option><option>milk tea</option></select></label>
+            <label class="name-field">Milk<select data-truth="milk"><option>whole milk</option><option>oat milk</option><option>almond milk</option><option>none</option></select></label>
+            <label class="name-field">Sweetness<select data-truth="sweetness"><option>no sugar</option><option>light sugar</option><option>regular sugar</option><option>extra sweet</option></select></label>
+            <label class="name-field">Topping<select data-truth="topping"><option>boba</option><option>coffee jelly</option><option>foam</option><option>none</option></select></label>
+            <label class="name-field">Vibe<select data-truth="vibe"><option>classic</option><option>cozy</option><option>energetic</option><option>experimental</option></select></label>
+          </div>
+          <button id="lab-analyze-btn" class="primary-btn lab-analyze-btn" type="button">Analyze</button>
+          <p id="lab-status" class="lab-status" aria-live="polite">Enter a request or load an example.</p>
+        </section>
+
+        <section class="panel lab-results-panel">
+          <div class="panel-header compact-header">
+            <div>
+              <p class="summary-label">Existing benchmark report</p>
+              <div id="lab-benchmark-summary" class="lab-benchmark-summary">Loading saved metrics...</div>
+            </div>
+          </div>
+          <div class="lab-table-wrap">
+            <table class="lab-table">
+              <thead><tr><th>Model</th><th>Base</th><th>Milk</th><th>Sweetness</th><th>Topping</th><th>Vibe</th><th>Avg. confidence</th><th>Latency (ms)</th></tr></thead>
+              <tbody id="lab-results-body"><tr><td colspan="8">Run an analysis to compare models.</td></tr></tbody>
+            </table>
+          </div>
+          <div id="lab-disagreements" class="lab-disagreements"></div>
+          <details class="lab-confidence-details">
+            <summary>Per-attribute confidence</summary>
+            <div id="lab-confidence-content"></div>
+          </details>
+        </section>
+      </div>
+
+      <section id="lab-correction-panel" class="panel lab-correction-panel hidden">
+        <div class="panel-header">
+          <div>
+            <p class="summary-label">Human-in-the-loop learning</p>
+            <h3>Correct a Model Prediction</h3>
+          </div>
+        </div>
+        <p class="lab-help">Corrections enter the pending review queue. They are never trained automatically.</p>
+        <div class="lab-correction-controls">
+          <label class="name-field" for="lab-correction-model"><span>Model to correct</span>
+            <select id="lab-correction-model">
+              <option value="keyword_rules">Keyword Rules</option>
+              <option value="multinomial_nb">Multinomial Naive Bayes</option>
+              <option value="logistic_regression">Logistic Regression</option>
+              <option value="linear_svm">Linear SVM</option>
+            </select>
+          </label>
+        </div>
+        <div id="lab-corrected-recipe" class="lab-truth-fields">
+          <label class="name-field">Base<select data-corrected="base"><option>espresso</option><option>cold brew</option><option>matcha</option><option>milk tea</option></select></label>
+          <label class="name-field">Milk<select data-corrected="milk"><option>whole milk</option><option>oat milk</option><option>almond milk</option><option>none</option></select></label>
+          <label class="name-field">Sweetness<select data-corrected="sweetness"><option>no sugar</option><option>light sugar</option><option>regular sugar</option><option>extra sweet</option></select></label>
+          <label class="name-field">Topping<select data-corrected="topping"><option>boba</option><option>coffee jelly</option><option>foam</option><option>none</option></select></label>
+          <label class="name-field">Vibe<select data-corrected="vibe"><option>classic</option><option>cozy</option><option>energetic</option><option>experimental</option></select></label>
+        </div>
+        <button id="lab-submit-correction-btn" class="primary-btn" type="button">Submit Correction for Review</button>
+        <p id="lab-feedback-status" class="lab-status" aria-live="polite"></p>
+      </section>
+
+      <section class="panel lab-feedback-panel">
+        <div class="panel-header">
+          <div>
+            <p class="summary-label">Human review required</p>
+            <h3>Feedback Queue</h3>
+          </div>
+          <button id="lab-refresh-feedback-btn" class="secondary-btn" type="button">Refresh Queue</button>
+        </div>
+        <div id="lab-feedback-queue" class="lab-feedback-queue" aria-live="polite"><p>Loading pending feedback...</p></div>
+      </section>
+    </section>
+
+    <section id="analytics-dashboard" class="analytics-dashboard hidden">
+      <div class="analytics-heading">
+        <div>
+          <p class="eyebrow">Local Product Insights</p>
+          <h2>Analytics</h2>
+          <p class="subtitle">Anonymous, local-only gameplay and model metrics. Small samples are exploratory.</p>
+        </div>
+        <div class="analytics-actions">
+          <button id="analytics-export-btn" class="secondary-btn" type="button">Export CSV</button>
+          <button id="analytics-refresh-btn" class="secondary-btn" type="button">Refresh</button>
+          <button id="analytics-reset-btn" class="secondary-btn" type="button">Reset Analytics</button>
+          <button id="analytics-back-btn" class="secondary-btn" type="button">Back to Setup</button>
+        </div>
+      </div>
+      <p id="analytics-status" class="lab-status" aria-live="polite">Loading local analytics...</p>
+      <section class="analytics-section">
+        <h3>Engagement & Gameplay</h3>
+        <div id="analytics-product-metrics" class="analytics-metric-grid"></div>
+      </section>
+      <section class="analytics-section analytics-two-column">
+        <div>
+          <h3>Gameplay Funnel</h3>
+          <div id="analytics-funnel" class="analytics-funnel"></div>
+        </div>
+        <div>
+          <h3>Player vs Model Errors</h3>
+          <div id="analytics-errors"></div>
+        </div>
+      </section>
+      <section class="analytics-section">
+        <h3>Difficulty</h3>
+        <div class="lab-table-wrap"><table class="lab-table analytics-table"><thead><tr><th>Difficulty</th><th>Orders</th><th>Success</th><th>Avg. response</th><th>Hint rate</th><th>Clarification rate</th></tr></thead><tbody id="analytics-difficulty"></tbody></table></div>
+      </section>
+      <section class="analytics-section analytics-two-column">
+        <div><h3>AI / ML Quality</h3><div id="analytics-ai-metrics" class="analytics-metric-grid"></div></div>
+        <div><h3>Adaptive Policy Learning</h3><div id="analytics-bandit-metrics" class="analytics-metric-grid"></div><div id="analytics-bandit-actions" class="analytics-funnel"></div><button id="analytics-bandit-reset-btn" class="secondary-btn" type="button">Reset Bandit Learning</button></div>
+        <div><h3>Feedback Loop</h3><div id="analytics-feedback-metrics" class="analytics-metric-grid"></div></div>
+      </section>
+      <section class="analytics-section">
+        <h3>Experiments</h3>
+        <p class="lab-help">Descriptive comparisons only; no causal or significance claims are generated.</p>
+        <div id="analytics-experiments" class="analytics-experiment-grid"></div>
+      </section>
+      <p class="analytics-privacy-note">Stored on this machine only in <code>data/analytics.sqlite3</code>. No names, IP addresses, free-form order text, or cloud analytics are collected.</p>
+    </section>
+
+    <section id="game-grid" class="game-grid">
+      <article class="panel panel-order">
+        <div class="panel-header">
+          <h2>Customer Order</h2>
+          <div class="header-actions">
+            <div class="hint-controls" aria-label="Progressive hints">
+              <button id="hint-level-1-btn" class="secondary-btn" type="button">Nudge (-1)</button>
+              <button id="hint-level-2-btn" class="secondary-btn" type="button" disabled>Strong (-2)</button>
+              <button id="hint-level-3-btn" class="secondary-btn" type="button" disabled>Reveal (-3)</button>
+            </div>
+            <button id="next-order-btn" class="secondary-btn" type="button">Skip Order</button>
+          </div>
+        </div>
+        <div class="order-card">
+          <div class="customer-profile">
+            <figure class="customer-avatar">
+              <img src="../Avatar_1.png" alt="Customer avatar">
+            </figure>
+            <div class="customer-copy">
+              <p class="summary-label">Now Ordering</p>
+              <p id="customer-name" class="customer-name"></p>
+              <span id="persona-badge" class="persona-badge hidden"></span>
+              <p id="adaptive-policy-note" class="difficulty-help" aria-live="polite"></p>
+            </div>
+          </div>
+          <p id="customer-request" class="customer-request"></p>
+          <div id="uncertainty-panel" class="uncertainty-panel hidden" aria-live="polite">
+            <p id="uncertainty-message" class="uncertainty-message"></p>
+            <button id="clarify-btn" class="secondary-btn" type="button">Ask Customer (-3s)</button>
+            <p id="clarification-reply" class="clarification-reply hidden"></p>
+          </div>
+          <div id="ai-summary-panel" class="ai-summary hidden">
+            <p class="summary-label">AI interpretation</p>
+            <ul id="ai-summary-list"></ul>
+            <p id="ai-meta" class="ai-meta"></p>
+          </div>
+          <p id="hint-helper-text" class="hint-helper-text">
+            Use progressive hints for help. Hints cost points; clarification costs time.
+          </p>
+          <p id="hint-result" class="hint-result hidden" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article class="panel panel-station">
+        <div class="panel-header">
+          <h2>Build the Drink</h2>
+          <button id="serve-btn" class="primary-btn" type="button">Serve Drink</button>
+        </div>
+        <div class="drink-preview-stage">
+          <figure class="drink-figure">
+            <img id="drink-preview-image" src="../Espresso.png" alt="Selected drink preview">
+          </figure>
+          <div class="drink-preview-copy">
+            <p class="summary-label">Live Drink Preview</p>
+            <h3 id="drink-preview-title">Signature Brew</h3>
+            <p id="drink-preview-description" class="preview-description">
+              The selected recipe will appear here with a matching visual style.
+            </p>
+          </div>
+        </div>
+        <div class="builder-groups" id="builder-groups"></div>
+        <div class="recipe-preview">
+          <h3>Current Recipe</h3>
+          <div id="current-recipe" class="recipe-tags"></div>
+        </div>
+      </article>
+
+      <article class="panel panel-status">
+        <h2>Shift</h2>
+        <div class="stats">
+          <div class="stat-card">
+            <span class="stat-label">Active Barista</span>
+            <strong id="active-player">Waiting</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Timer</span>
+            <strong id="round-timer" aria-label="Time remaining">30s</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Current Score</span>
+            <strong id="score" aria-label="Current score" aria-live="polite">0</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">AI Confidence</span>
+            <strong id="confidence" aria-label="AI confidence" aria-live="polite">--</strong>
+          </div>
+        </div>
+        <div class="stats secondary-stats">
+          <div class="stat-card">
+            <span class="stat-label">Orders Served</span>
+            <strong id="served-count">0</strong>
+          </div>
+          <div id="shift-progress-card" class="stat-card hidden">
+            <span class="stat-label">Rush Hour Shift</span>
+            <strong id="shift-progress">0 / 5</strong>
+          </div>
+        </div>
+        <div class="scoreboard-card">
+          <div class="panel-header compact-header">
+            <h3>Match Scoreboard</h3>
+            <span id="match-label" class="match-label">Round not started</span>
+          </div>
+          <div id="scoreboard-list" class="scoreboard-list"></div>
+        </div>
+        <div class="feedback-card">
+          <h3>Order Feedback</h3>
+          <p id="feedback-message">
+            Build the requested recipe and serve it before the timer runs out.
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="personas.js"></script>
+  <script src="rush_hour.js"></script>
+  <script src="clarification.js"></script>
+  <script src="hints.js"></script>
+  <script src="difficulty_engine.js"></script>
+  <script src="bandit_policy.js"></script>
+  <script src="ai_lab_utils.js"></script>
+  <script src="analytics.js"></script>
+  <script src="customer_generation.js"></script>
+  <script src="ai_lab.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+[project]
+name = "brewai"
+version = "0.1.0"
+description = "AI Barista Simulator final-year project"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi==0.116.1",
+  "uvicorn==0.35.0",
+  "scikit-learn==1.7.1",
+  "joblib==1.5.1",
+  "pydantic==2.11.7",
+]
+
+[tool.uv]
+package = false

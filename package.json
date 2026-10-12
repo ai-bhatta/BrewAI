@@ -1,0 +1,13 @@
+{
+  "name": "brewai-browser-tests",
+  "private": true,
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "capture:screenshots": "node scripts/capture_screenshots.js",
+    "install:e2e-browser": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}

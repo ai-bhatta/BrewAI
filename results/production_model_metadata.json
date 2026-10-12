@@ -1,0 +1,39 @@
+{
+  "artifact_version": 1,
+  "model": "calibrated_logistic_regression",
+  "algorithm": "CalibratedClassifierCV(sigmoid) over word unigram/bigram TF-IDF + LogisticRegression",
+  "training_examples": 149,
+  "holdout_examples": 51,
+  "canonical_dataset": "data/order_dataset.json",
+  "dataset_examples": 200,
+  "dataset_sha256": "40483e72f8080eb339c6f27c9dfee3c36981a10046db8f8875ff2b64d86c1cf7",
+  "trained_at_utc": "2026-10-12T16:18:59.677046+00:00",
+  "random_seed": 42,
+  "evaluation_method": "StratifiedGroupKFold grouped by base label and connected character n-gram similarity clusters; deterministic first fold; holdout excluded from artifact fitting",
+  "split": {
+    "method": "StratifiedGroupKFold by base label; character n-gram similarity groups",
+    "test_size_target": 0.25,
+    "test_size_actual": 0.255,
+    "random_state": 42,
+    "similarity_threshold": 0.55,
+    "template_group_count": 171,
+    "train_count": 149,
+    "test_count": 51,
+    "max_train_test_similarity": 0.5413359627635947
+  },
+  "per_attribute_macro_f1": {
+    "base": 1.0,
+    "milk": 0.9196428571428571,
+    "sweetness": 0.9172735915022666,
+    "topping": 0.8888888888888888,
+    "vibe": 0.9196428571428571
+  },
+  "macro_f1": 0.9290896389353739,
+  "metric_scope": "Grouped holdout only; not the robustness/challenge set and not a claim of general accuracy.",
+  "benchmark_context": {
+    "benchmark_winner": "linear_svm",
+    "benchmark_metric": "0.977 macro F1 in results/model_comparison.json grouped holdout; separate comparison experiment",
+    "production_model": "calibrated_logistic_regression",
+    "reason": "Retain the existing probability-producing calibrated Logistic Regression production baseline; the Linear SVM comparison candidate does not expose calibrated probabilities, which the gameplay confidence UI consumes. This clean run does not automatically promote a different model."
+  }
+}

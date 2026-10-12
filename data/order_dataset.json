@@ -1,0 +1,1602 @@
+[
+  {
+    "utterance": "I'd like an espresso with whole milk, unsweetened, with boba. Keep it classic.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Give me an iced cold brew using creamy oat milk; sweetness: not too sweet; topping: diced coffee jelly. Give it a snug café-corner mood.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "How about a hot matcha made with almond instead of dairy, the default sugar level, with a light cap of foam? Keep it bold and focused.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Please prepare a creamy milk tea kept free of additional milk, on the sweeter side, finished with no topping. I want the barista-bot special.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "For the train ride, I'd like a strong espresso using barista oat milk, sweetened the regular way, with all toppings left off. Give it a peaceful afternoon mood.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I need a slow-steeped cold brew with a nutty almond-milk finish, boosted sweetness, with tapioca pearls for some reading time. Keep the mood punchy and energetic.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "I'm ordering a bright matcha plain and without milk, without added sugar, with dark coffee-jelly pieces for my lunch break. I want something surprising but intentional.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Quick order: a rich milk tea with a splash of whole milk, light sugar, with extra-soft foam. Classic, please.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "I'm thinking of an espresso-based drink using only almond milk, with no sweetening added, with a serving of foam. Make it feel like a quick recharge.",
+    "base": "espresso",
+    "milk": "almond milk",
+    "sweetness": "no sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Set me up with a strong cold brew with all milk omitted, just a little sugar, and a clean top with no extras. Make the order feel unusual and creative.",
+    "base": "cold brew",
+    "milk": "none",
+    "sweetness": "light sugar",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Build me a green-tea matcha with whole milk as the milk choice, standard sweetness, with chewy boba. I am after something timeless.",
+    "base": "matcha",
+    "milk": "whole milk",
+    "sweetness": "regular sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Please put together a smooth milk tea made dairy-free with oat milk, plenty of sugar, with a serving of coffee jelly. Give it a soft, relaxing mood.",
+    "base": "milk tea",
+    "milk": "oat milk",
+    "sweetness": "extra sweet",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Make my next drink an iced espresso with no added milk, the default sugar level, with jelly at the bottom. I want a fun experimental drink.",
+    "base": "espresso",
+    "milk": "none",
+    "sweetness": "regular sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Could I have a cold-brew coffee using full-fat milk, on the sweeter side, with velvety foam? I want a traditional feel.",
+    "base": "cold brew",
+    "milk": "whole milk",
+    "sweetness": "extra sweet",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Could you make a matcha latte-style drink made with oat instead of dairy, at zero added sweetness, with nothing added on top? Make it mellow rather than intense.",
+    "base": "matcha",
+    "milk": "oat milk",
+    "sweetness": "no sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I want a fragrant milk tea with almond milk as the dairy-free option, lightly sweetened, and black boba pearls; it is for a quiet café moment. Make it energetic and focused.",
+    "base": "milk tea",
+    "milk": "almond milk",
+    "sweetness": "light sugar",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Today, make it a punchy espresso using regular milk, without added sugar, with plenty of boba. Make it feel like a regular favorite.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "I feel like having a tall cold brew with a smooth oat-milk finish, light sugar, with a scoop of coffee jelly. Make it the comforting choice.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I'm after a simple matcha with the almond option, balanced sweetness, with the foam topping for a weekend treat. I need a drink for a long work session.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Please ring up a milk tea without a separate milk addition, an extra-sweet finish, with no finishing topping. Make it adventurous.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "One espresso using only oat milk, standard sweetness, and no garnish would be great. Keep the vibe gentle and cozy.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "My drink today is an iced cold brew with dairy replaced by almond milk, plenty of sugar, with boba. Keep it bold and focused.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Could the barista make a hot matcha with the drink itself kept milk-free, with the no-sugar setting, with diced coffee jelly? I am in the mood for a quirky combination.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Can I get a creamy milk tea made with regular dairy milk, less sugar than usual, with a light cap of foam? Make it the classic choice.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "For my next cup, choose a strong espresso with almond milk, at zero added sweetness, with a thick foamy topping. I want something for a productive afternoon.",
+    "base": "espresso",
+    "milk": "almond milk",
+    "sweetness": "no sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Order me a slow-steeped cold brew served with no milk, lightly sweetened, with all toppings left off. Make it adventurous.",
+    "base": "cold brew",
+    "milk": "none",
+    "sweetness": "light sugar",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "For a change, I'll have a bright matcha with dairy milk, normally sweetened, finished with tapioca pearls. Make it familiar and straightforward.",
+    "base": "matcha",
+    "milk": "whole milk",
+    "sweetness": "regular sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Could you prepare a rich milk tea with oat milk as the dairy-free option, maximum sweetness, with dark coffee-jelly pieces? I want a soothing, easygoing drink.",
+    "base": "milk tea",
+    "milk": "oat milk",
+    "sweetness": "extra sweet",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I'll take an espresso-based drink with no milk mixed in, balanced sweetness, with a coffee-jelly topping. I want something futuristic.",
+    "base": "espresso",
+    "milk": "none",
+    "sweetness": "regular sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Make it a strong cold brew made with full dairy, an extra-sweet finish, and use a serving of foam for the finish. Classic, please.",
+    "base": "cold brew",
+    "milk": "whole milk",
+    "sweetness": "extra sweet",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Please make me a green-tea matcha with the oat option, with no extra sweetness, and finish it with a clean top with no extras. Make it cozy and comforting.",
+    "base": "matcha",
+    "milk": "oat milk",
+    "sweetness": "no sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Let's go with a smooth milk tea with a splash of almond milk, a light sweetness level, and chewy boba. Give it an alert, ready-to-go feel.",
+    "base": "milk tea",
+    "milk": "almond milk",
+    "sweetness": "light sugar",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Here is my custom order: an iced espresso using whole dairy milk, with the no-sugar setting, with tapioca at the bottom. Give it a familiar café feel.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "My ideal cup right now is a cold-brew coffee with dairy replaced by oat milk, less sugar than usual, with jelly at the bottom. I want something calm for a quiet break.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "My order is a matcha latte-style drink with almond milk as the milk choice, the usual amount of sugar, with velvety foam. Give it a high-focus vibe.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "I'd love a fragrant milk tea without any additional milk, dessert-level sweet, finished with nothing added on top. Keep it playful rather than traditional.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "I'm in the mood for a punchy espresso with oat milk, normally sweetened, with no topping selected. I want a relaxed, cozy vibe.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "A tall cold brew using light almond milk, maximum sweetness, with plenty of boba, please. Keep it bold and focused.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "One simple matcha without dairy or plant milk, with the sweetener skipped, with a scoop of coffee jelly, please. Make it adventurous.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "For something different, give me a milk tea with a creamy whole-milk finish, restrained sweetener, with the foam topping. Give it an old-school coffee-shop mood.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "I'd like an espresso using unsweetened almond milk, with no extra sweetness, with a creamy foam layer. Keep it bold and focused.",
+    "base": "espresso",
+    "milk": "almond milk",
+    "sweetness": "no sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Give me an iced cold brew with neither regular nor alternative milk; sweetness: a light sweetness level; topping: no garnish. Give it an adventurous café-lab vibe.",
+    "base": "cold brew",
+    "milk": "none",
+    "sweetness": "light sugar",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "How about a hot matcha with real milk, the normal sweetness level, with boba? Classic, please.",
+    "base": "matcha",
+    "milk": "whole milk",
+    "sweetness": "regular sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Please prepare a creamy milk tea with a splash of oat milk, generous sweetener, finished with diced coffee jelly. I want a mellow, rainy-day feel.",
+    "base": "milk tea",
+    "milk": "oat milk",
+    "sweetness": "extra sweet",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "For an afternoon break, I'd like a strong espresso with the no-milk option, the usual amount of sugar, with coffee-jelly cubes. Make it feel inventive.",
+    "base": "espresso",
+    "milk": "none",
+    "sweetness": "regular sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "I need a slow-steeped cold brew built on whole milk, dessert-level sweet, with a thick foamy topping for a quiet café moment. Keep it classic.",
+    "base": "cold brew",
+    "milk": "whole milk",
+    "sweetness": "extra sweet",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "I'm ordering a bright matcha with oat milk as the milk choice, with no added syrup, with all toppings left off for class. Give it a snug café-corner mood.",
+    "base": "matcha",
+    "milk": "oat milk",
+    "sweetness": "no sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Quick order: a rich milk tea made dairy-free with almond milk, mild sweetness, with tapioca pearls. Keep it bold and focused.",
+    "base": "milk tea",
+    "milk": "almond milk",
+    "sweetness": "light sugar",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "I'm thinking of an espresso-based drink with whole milk, with the sweetener skipped, with extra boba. I want the dependable version.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Set me up with a strong cold brew using creamy oat milk, restrained sweetener, and a coffee-jelly topping. Give it a peaceful afternoon mood.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Build me a green-tea matcha made with almond instead of dairy, regular sweetness, with a serving of foam. Keep the mood punchy and energetic.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Please put together a smooth milk tea kept free of additional milk, very sweet, with a clean top with no extras. I want something surprising but intentional.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Make my next drink an iced espresso using barista oat milk, the normal sweetness level, with no boba, jelly, or foam. I am after a comforting afternoon drink.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Could I have a cold-brew coffee with a nutty almond-milk finish, generous sweetener, with tapioca at the bottom? Make it feel like a quick recharge.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Could you make a matcha latte-style drink plain and without milk, with the sugar left out, with jelly at the bottom? Make the order feel unusual and creative.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "I want a fragrant milk tea with a splash of whole milk, just slightly sweet, and velvety foam; it is for my morning commute. I am after something timeless.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Today, make it a punchy espresso using only almond milk, with no added syrup, with a cloud of foam. Give it a lively pick-me-up vibe.",
+    "base": "espresso",
+    "milk": "almond milk",
+    "sweetness": "no sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "I feel like having a tall cold brew with all milk omitted, mild sweetness, with no topping selected. I want a fun experimental drink.",
+    "base": "cold brew",
+    "milk": "none",
+    "sweetness": "light sugar",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "I'm after a simple matcha with whole milk as the milk choice, regular sugar, with plenty of boba for a project work block. I want a traditional feel.",
+    "base": "matcha",
+    "milk": "whole milk",
+    "sweetness": "regular sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Please ring up a milk tea made dairy-free with oat milk, sweeter than usual, with a scoop of coffee jelly. Keep it mellow.",
+    "base": "milk tea",
+    "milk": "oat milk",
+    "sweetness": "extra sweet",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "One espresso with no added milk, regular sweetness, and coffee jelly would be great. Make it playful and experimental.",
+    "base": "espresso",
+    "milk": "none",
+    "sweetness": "regular sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "My drink today is an iced cold brew using full-fat milk, very sweet, with a creamy foam layer. Classic, please.",
+    "base": "cold brew",
+    "milk": "whole milk",
+    "sweetness": "extra sweet",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Could the barista make a hot matcha made with oat instead of dairy, with no sweetener mixed in, with no garnish? Make it the comforting choice.",
+    "base": "matcha",
+    "milk": "oat milk",
+    "sweetness": "no sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Can I get a creamy milk tea with almond milk as the dairy-free option, a small amount of sugar, with boba? I need a drink for a long work session.",
+    "base": "milk tea",
+    "milk": "almond milk",
+    "sweetness": "light sugar",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "For my next cup, choose a strong espresso using regular milk, with the sugar left out, with classic boba. I want a no-surprises kind of drink.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Order me a slow-steeped cold brew with a smooth oat-milk finish, just slightly sweet, with coffee-jelly cubes. Keep it mellow.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "For a change, I'll have a bright matcha with the almond option, classic sweetness, finished with a thick foamy topping. I need an energetic café mood.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Could you prepare a rich milk tea without a separate milk addition, extra sugar, with all toppings left off? I am in the mood for a quirky combination.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "I'll take an espresso-based drink using only oat milk, regular sugar, with nothing added after mixing. Make it feel like a blanket-in-a-cup order.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Make it a strong cold brew with dairy replaced by almond milk, sweeter than usual, and use extra boba for the finish. Keep it bold and focused.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Please make me a green-tea matcha with the drink itself kept milk-free, with no sweetness added, and finish it with a coffee-jelly topping. Keep the vibe futuristic and bold.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Let's go with a smooth milk tea made with regular dairy milk, low sweetness, and a serving of foam. Make it familiar and straightforward.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Here is my custom order: an iced espresso with almond milk, with no sweetener mixed in, with extra foam on top. I want a lively afternoon drink.",
+    "base": "espresso",
+    "milk": "almond milk",
+    "sweetness": "no sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "My ideal cup right now is a cold-brew coffee served with no milk, a small amount of sugar, with no boba, jelly, or foam. I want something futuristic.",
+    "base": "cold brew",
+    "milk": "none",
+    "sweetness": "light sugar",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "My order is a matcha latte-style drink with dairy milk, the standard sugar option, with tapioca at the bottom. Keep the mood traditional.",
+    "base": "matcha",
+    "milk": "whole milk",
+    "sweetness": "regular sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "I'd love a fragrant milk tea with oat milk as the dairy-free option, extra sweet, finished with jelly at the bottom. Make it cozy and comforting.",
+    "base": "milk tea",
+    "milk": "oat milk",
+    "sweetness": "extra sweet",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I'm in the mood for a punchy espresso with no milk mixed in, classic sweetness, with plenty of coffee jelly. Give it a curious, try-something-new mood.",
+    "base": "espresso",
+    "milk": "none",
+    "sweetness": "regular sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "A tall cold brew made with full dairy, extra sugar, with a cloud of foam, please. Classic, please.",
+    "base": "cold brew",
+    "milk": "whole milk",
+    "sweetness": "extra sweet",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "One simple matcha with the oat option, with the sugar option set to zero, with no topping selected, please. Keep it mellow.",
+    "base": "matcha",
+    "milk": "oat milk",
+    "sweetness": "no sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "For something different, give me a milk tea with a splash of almond milk, half the usual sugar, with plenty of boba. Give it a high-focus vibe.",
+    "base": "milk tea",
+    "milk": "almond milk",
+    "sweetness": "light sugar",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "I'd like an espresso using whole dairy milk, with no sweetness added, with a layer of black pearls. Aim for a simple, classic vibe.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Give me an iced cold brew with dairy replaced by oat milk; sweetness: low sweetness; topping: coffee jelly. I want a relaxed, cozy vibe.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "How about a hot matcha with almond milk as the milk choice, medium sweetness, with a creamy foam layer? Keep it bold and focused.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Please prepare a creamy milk tea without any additional milk, the sweetness turned all the way up, finished with no garnish. Make it the unconventional choice.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "For a short coffee break, I'd like a strong espresso with oat milk, the standard sugar option, with a topping-free finish. Make it feel warm and homey.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I need a slow-steeped cold brew using light almond milk, extra sweet, with classic boba for my morning commute. Keep it bold and focused.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "I'm ordering a bright matcha without dairy or plant milk, no added sweetener, with coffee-jelly cubes for my next meeting. Give it an adventurous café-lab vibe.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Quick order: a rich milk tea with a creamy whole-milk finish, barely sweetened, with a thick foamy topping. Classic, please.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "I'm thinking of an espresso-based drink using unsweetened almond milk, with the sugar option set to zero, with a soft foam cap. I need a bold study drink.",
+    "base": "espresso",
+    "milk": "almond milk",
+    "sweetness": "no sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Set me up with a strong cold brew with neither regular nor alternative milk, half the usual sugar, and nothing added after mixing. Make it feel inventive.",
+    "base": "cold brew",
+    "milk": "none",
+    "sweetness": "light sugar",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Build me a green-tea matcha with real milk, the usual sweetness setting, with extra boba. Keep it classic.",
+    "base": "matcha",
+    "milk": "whole milk",
+    "sweetness": "regular sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Please put together a smooth milk tea with a splash of oat milk, more sugar than normal, with a coffee-jelly topping. Give it a snug café-corner mood.",
+    "base": "milk tea",
+    "milk": "oat milk",
+    "sweetness": "extra sweet",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Make my next drink an iced espresso with the no-milk option, medium sweetness, with coffee jelly at the bottom. Make it feel like a new menu prototype.",
+    "base": "espresso",
+    "milk": "none",
+    "sweetness": "regular sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Could I have a cold-brew coffee built on whole milk, the sweetness turned all the way up, with extra foam on top? I want the dependable version.",
+    "base": "cold brew",
+    "milk": "whole milk",
+    "sweetness": "extra sweet",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Could you make a matcha latte-style drink with oat milk as the milk choice, zero added sugar, with no boba, jelly, or foam? Give it a peaceful afternoon mood.",
+    "base": "matcha",
+    "milk": "oat milk",
+    "sweetness": "no sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I want a fragrant milk tea made dairy-free with almond milk, a gentle touch of sweetness, and tapioca at the bottom; it is for a relaxed evening. Keep the mood punchy and energetic.",
+    "base": "milk tea",
+    "milk": "almond milk",
+    "sweetness": "light sugar",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Today, make it a punchy espresso with whole milk, no added sweetener, with the boba topping. Keep it conventional and easy.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "I feel like having a tall cold brew using creamy oat milk, barely sweetened, with plenty of coffee jelly. I am after a comforting afternoon drink.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I'm after a simple matcha made with almond instead of dairy, a normal amount of sweetener, with a cloud of foam for a calm start. Make it feel like a quick recharge.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Please ring up a milk tea kept free of additional milk, sweet enough to feel like dessert, with no topping selected. Make it adventurous.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "One espresso using barista oat milk, the usual sweetness setting, and no add-ons would be great. Keep it soft and comforting.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "My drink today is an iced cold brew with a nutty almond-milk finish, more sugar than normal, with a layer of black pearls. Keep it bold and focused.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Could the barista make a hot matcha plain and without milk, no added sugar, with coffee jelly? I want a fun experimental drink.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Can I get a creamy milk tea with a splash of whole milk, reduced sweetness, with a creamy foam layer? I want a traditional feel.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "For my next cup, choose a strong espresso using only almond milk, zero added sugar, with a foamy top. Make it a strong study-session order.",
+    "base": "espresso",
+    "milk": "almond milk",
+    "sweetness": "no sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Order me a slow-steeped cold brew with all milk omitted, a gentle touch of sweetness, with a topping-free finish. Make it adventurous.",
+    "base": "cold brew",
+    "milk": "none",
+    "sweetness": "light sugar",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "For a change, I'll have a bright matcha with whole milk as the milk choice, ordinary sweetness, finished with classic boba. Make it feel like a regular favorite.",
+    "base": "matcha",
+    "milk": "whole milk",
+    "sweetness": "regular sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Could you prepare a rich milk tea made dairy-free with oat milk, heavily sweetened, with coffee-jelly cubes? Make it the comforting choice.",
+    "base": "milk tea",
+    "milk": "oat milk",
+    "sweetness": "extra sweet",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I'll take an espresso-based drink with no added milk, a normal amount of sweetener, with small coffee-jelly cubes. I want the barista-bot special.",
+    "base": "espresso",
+    "milk": "none",
+    "sweetness": "regular sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Make it a strong cold brew using full-fat milk, sweet enough to feel like dessert, and use a soft foam cap for the finish. Classic, please.",
+    "base": "cold brew",
+    "milk": "whole milk",
+    "sweetness": "extra sweet",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Please make me a green-tea matcha made with oat instead of dairy, unsweetened, and finish it with nothing added after mixing. Keep the vibe gentle and cozy.",
+    "base": "matcha",
+    "milk": "oat milk",
+    "sweetness": "no sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Let's go with a smooth milk tea with almond milk as the dairy-free option, not too sweet, and extra boba. I need an energetic café mood.",
+    "base": "milk tea",
+    "milk": "almond milk",
+    "sweetness": "light sugar",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Here is my custom order: an iced espresso using regular milk, no added sugar, with chewy tapioca pearls. Nothing trendy—just timeless.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "My ideal cup right now is a cold-brew coffee with a smooth oat-milk finish, reduced sweetness, with coffee jelly at the bottom. Make it feel like a blanket-in-a-cup order.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "My order is a matcha latte-style drink with the almond option, sweetened the regular way, with extra foam on top. I want something for a productive afternoon.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "I'd love a fragrant milk tea without a separate milk addition, boosted sweetness, finished with no boba, jelly, or foam. Keep the vibe futuristic and bold.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "I'm in the mood for a punchy espresso using only oat milk, ordinary sweetness, with no topping at all. Give it a soft, relaxing mood.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "A tall cold brew with dairy replaced by almond milk, heavily sweetened, with the boba topping, please. Keep it bold and focused.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "One simple matcha with the drink itself kept milk-free, with no sweetening added, with plenty of coffee jelly, please. Make it adventurous.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "For something different, give me a milk tea made with regular dairy milk, just a little sugar, with a cloud of foam. Keep the mood traditional.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "I'd like an espresso with almond milk, unsweetened, with foam. Make it energetic and focused.",
+    "base": "espresso",
+    "milk": "almond milk",
+    "sweetness": "no sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Give me an iced cold brew served with no milk; sweetness: not too sweet; topping: no add-ons. Give it a curious, try-something-new mood.",
+    "base": "cold brew",
+    "milk": "none",
+    "sweetness": "light sugar",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "How about a hot matcha with dairy milk, the default sugar level, with a layer of black pearls? Classic, please.",
+    "base": "matcha",
+    "milk": "whole milk",
+    "sweetness": "regular sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Please prepare a creamy milk tea with oat milk as the dairy-free option, on the sweeter side, finished with coffee jelly. I want something calm for a quiet break.",
+    "base": "milk tea",
+    "milk": "oat milk",
+    "sweetness": "extra sweet",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "For a rainy afternoon, I'd like a strong espresso with no milk mixed in, sweetened the regular way, with extra coffee jelly. Give it a playful simulator-style twist.",
+    "base": "espresso",
+    "milk": "none",
+    "sweetness": "regular sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "I need a slow-steeped cold brew made with full dairy, boosted sweetness, with a foamy top for a relaxed evening. Aim for a simple, classic vibe.",
+    "base": "cold brew",
+    "milk": "whole milk",
+    "sweetness": "extra sweet",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "I'm ordering a bright matcha with the oat option, without added sugar, with a topping-free finish for breakfast. I want a relaxed, cozy vibe.",
+    "base": "matcha",
+    "milk": "oat milk",
+    "sweetness": "no sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Quick order: a rich milk tea with a splash of almond milk, light sugar, with classic boba. Keep it bold and focused.",
+    "base": "milk tea",
+    "milk": "almond milk",
+    "sweetness": "light sugar",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "I'm thinking of an espresso-based drink using whole dairy milk, with no sweetening added, with a serving of pearls. Make it the classic choice.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Set me up with a strong cold brew with dairy replaced by oat milk, just a little sugar, and small coffee-jelly cubes. Make it feel warm and homey.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Build me a green-tea matcha with almond milk as the milk choice, standard sweetness, with a soft foam cap. Keep it bold and focused.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Please put together a smooth milk tea without any additional milk, plenty of sugar, with nothing added after mixing. Give it an adventurous café-lab vibe.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Make my next drink an iced espresso with oat milk, the default sugar level, with no extras. I want a soothing, easygoing drink.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Could I have a cold-brew coffee using light almond milk, on the sweeter side, with chewy tapioca pearls? I need a bold study drink.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Could you make a matcha latte-style drink without dairy or plant milk, at zero added sweetness, with coffee jelly at the bottom? Make it feel inventive.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "I want a fragrant milk tea with a creamy whole-milk finish, lightly sweetened, and extra foam on top; it is for a long revision block. Keep it classic.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Today, make it a punchy espresso using unsweetened almond milk, without added sugar, with plenty of foam. Give it an alert, ready-to-go feel.",
+    "base": "espresso",
+    "milk": "almond milk",
+    "sweetness": "no sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "I feel like having a tall cold brew with neither regular nor alternative milk, light sugar, with no topping at all. Make it feel like a new menu prototype.",
+    "base": "cold brew",
+    "milk": "none",
+    "sweetness": "light sugar",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "I'm after a simple matcha with real milk, balanced sweetness, with the boba topping for a busy morning. I want the dependable version.",
+    "base": "matcha",
+    "milk": "whole milk",
+    "sweetness": "regular sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Please ring up a milk tea with a splash of oat milk, an extra-sweet finish, with plenty of coffee jelly. Keep it mellow.",
+    "base": "milk tea",
+    "milk": "oat milk",
+    "sweetness": "extra sweet",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "One espresso with the no-milk option, standard sweetness, and a layer of coffee jelly would be great. Keep it playful rather than traditional.",
+    "base": "espresso",
+    "milk": "none",
+    "sweetness": "regular sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "My drink today is an iced cold brew built on whole milk, plenty of sugar, with foam. Classic, please.",
+    "base": "cold brew",
+    "milk": "whole milk",
+    "sweetness": "extra sweet",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Could the barista make a hot matcha with oat milk as the milk choice, with the no-sugar setting, with no add-ons? I am after a comforting afternoon drink.",
+    "base": "matcha",
+    "milk": "oat milk",
+    "sweetness": "no sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Can I get a creamy milk tea made dairy-free with almond milk, less sugar than usual, with a layer of black pearls? Make it feel like a quick recharge.",
+    "base": "milk tea",
+    "milk": "almond milk",
+    "sweetness": "light sugar",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "For my next cup, choose a strong espresso with whole milk, at zero added sweetness, with boba at the bottom. Give it an old-school coffee-shop mood.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Order me a slow-steeped cold brew using creamy oat milk, lightly sweetened, with extra coffee jelly. Keep it mellow.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "For a change, I'll have a bright matcha made with almond instead of dairy, normally sweetened, finished with a foamy top. Give it a lively pick-me-up vibe.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Could you prepare a rich milk tea kept free of additional milk, maximum sweetness, with a topping-free finish? I want a fun experimental drink.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "I'll take an espresso-based drink using barista oat milk, balanced sweetness, with a plain top. I want a mellow, rainy-day feel.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Make it a strong cold brew with a nutty almond-milk finish, an extra-sweet finish, and use a serving of pearls for the finish. Keep it bold and focused.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Please make me a green-tea matcha plain and without milk, with no extra sweetness, and finish it with small coffee-jelly cubes. Make it playful and experimental.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Let's go with a smooth milk tea with a splash of whole milk, a light sweetness level, and a soft foam cap. Make it feel like a regular favorite.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Here is my custom order: an iced espresso using only almond milk, with the no-sugar setting, with foam on top. Make it the productive choice.",
+    "base": "espresso",
+    "milk": "almond milk",
+    "sweetness": "no sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "My ideal cup right now is a cold-brew coffee with all milk omitted, less sugar than usual, with no extras. I want the barista-bot special.",
+    "base": "cold brew",
+    "milk": "none",
+    "sweetness": "light sugar",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "My order is a matcha latte-style drink with whole milk as the milk choice, the usual amount of sugar, with chewy tapioca pearls. I want a no-surprises kind of drink.",
+    "base": "matcha",
+    "milk": "whole milk",
+    "sweetness": "regular sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "I'd love a fragrant milk tea made dairy-free with oat milk, dessert-level sweet, finished with coffee jelly at the bottom. Keep the vibe gentle and cozy.",
+    "base": "milk tea",
+    "milk": "oat milk",
+    "sweetness": "extra sweet",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I'm in the mood for a punchy espresso with no added milk, normally sweetened, with the coffee-jelly topping. I want something surprising but intentional.",
+    "base": "espresso",
+    "milk": "none",
+    "sweetness": "regular sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "A tall cold brew using full-fat milk, maximum sweetness, with plenty of foam, please. Classic, please.",
+    "base": "cold brew",
+    "milk": "whole milk",
+    "sweetness": "extra sweet",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "One simple matcha made with oat instead of dairy, with the sweetener skipped, with no topping at all, please. Keep it mellow.",
+    "base": "matcha",
+    "milk": "oat milk",
+    "sweetness": "no sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "For something different, give me a milk tea with almond milk as the dairy-free option, restrained sweetener, with the boba topping. I want something for a productive afternoon.",
+    "base": "milk tea",
+    "milk": "almond milk",
+    "sweetness": "light sugar",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "I'd like an espresso using regular milk, with no extra sweetness, with a tapioca topping. I am after something timeless.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Give me an iced cold brew with a smooth oat-milk finish; sweetness: a light sweetness level; topping: a layer of coffee jelly. Give it a soft, relaxing mood.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "How about a hot matcha with the almond option, the normal sweetness level, with foam? Keep it bold and focused.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Please prepare a creamy milk tea without a separate milk addition, generous sweetener, finished with no add-ons. I want something futuristic.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "For a coding session, I'd like a strong espresso using only oat milk, the usual amount of sugar, with nothing on top. Make it mellow rather than intense.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I need a slow-steeped cold brew with dairy replaced by almond milk, dessert-level sweet, with boba at the bottom for a long revision block. Make it energetic and focused.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "I'm ordering a bright matcha with the drink itself kept milk-free, with no added syrup, with extra coffee jelly for a creative brainstorming session. Give it a curious, try-something-new mood.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Quick order: a rich milk tea made with regular dairy milk, mild sweetness, with a foamy top. Classic, please.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "I'm thinking of an espresso-based drink with almond milk, with the sweetener skipped, with a generous foam cap. I need a drink for a long work session.",
+    "base": "espresso",
+    "milk": "almond milk",
+    "sweetness": "no sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Set me up with a strong cold brew served with no milk, restrained sweetener, and a plain top. Give it a playful simulator-style twist.",
+    "base": "cold brew",
+    "milk": "none",
+    "sweetness": "light sugar",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Build me a green-tea matcha with dairy milk, regular sweetness, with a serving of pearls. Aim for a simple, classic vibe.",
+    "base": "matcha",
+    "milk": "whole milk",
+    "sweetness": "regular sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Please put together a smooth milk tea with oat milk as the dairy-free option, very sweet, with small coffee-jelly cubes. I want a relaxed, cozy vibe.",
+    "base": "milk tea",
+    "milk": "oat milk",
+    "sweetness": "extra sweet",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Make my next drink an iced espresso with no milk mixed in, the normal sweetness level, with chewy coffee jelly. I am in the mood for a quirky combination.",
+    "base": "espresso",
+    "milk": "none",
+    "sweetness": "regular sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Could I have a cold-brew coffee made with full dairy, generous sweetener, with foam on top? Make it the classic choice.",
+    "base": "cold brew",
+    "milk": "whole milk",
+    "sweetness": "extra sweet",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Could you make a matcha latte-style drink with the oat option, with the sugar left out, with no extras? Make it feel warm and homey.",
+    "base": "matcha",
+    "milk": "oat milk",
+    "sweetness": "no sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I want a fragrant milk tea with a splash of almond milk, just slightly sweet, and chewy tapioca pearls; it is for some reading time. Keep it bold and focused.",
+    "base": "milk tea",
+    "milk": "almond milk",
+    "sweetness": "light sugar",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Today, make it a punchy espresso using whole dairy milk, with no added syrup, with a scoop of boba. Make it familiar and straightforward.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "I feel like having a tall cold brew with dairy replaced by oat milk, mild sweetness, with the coffee-jelly topping. I want a soothing, easygoing drink.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I'm after a simple matcha with almond milk as the milk choice, regular sugar, with plenty of foam for the walk home. I need a bold study drink.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Please ring up a milk tea without any additional milk, sweeter than usual, with no topping at all. Make it adventurous.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "One espresso with oat milk, regular sweetness, and no topping would be great. Make it cozy and comforting.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "My drink today is an iced cold brew using light almond milk, very sweet, with a tapioca topping. Keep it bold and focused.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Could the barista make a hot matcha without dairy or plant milk, with no sweetener mixed in, with a layer of coffee jelly? Make it feel like a new menu prototype.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Can I get a creamy milk tea with a creamy whole-milk finish, a small amount of sugar, with foam? I want the dependable version.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "For my next cup, choose a strong espresso using unsweetened almond milk, with the sugar left out, with extra-soft foam. Give it a high-focus vibe.",
+    "base": "espresso",
+    "milk": "almond milk",
+    "sweetness": "no sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Order me a slow-steeped cold brew with neither regular nor alternative milk, just slightly sweet, with nothing on top. Make it adventurous.",
+    "base": "cold brew",
+    "milk": "none",
+    "sweetness": "light sugar",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "For a change, I'll have a bright matcha with real milk, classic sweetness, finished with boba at the bottom. Keep it conventional and easy.",
+    "base": "matcha",
+    "milk": "whole milk",
+    "sweetness": "regular sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Could you prepare a rich milk tea with a splash of oat milk, extra sugar, with extra coffee jelly? I am after a comforting afternoon drink.",
+    "base": "milk tea",
+    "milk": "oat milk",
+    "sweetness": "extra sweet",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "I'll take an espresso-based drink with the no-milk option, regular sugar, with a serving of coffee jelly. Make it the unconventional choice.",
+    "base": "espresso",
+    "milk": "none",
+    "sweetness": "regular sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "Make it a strong cold brew built on whole milk, sweeter than usual, and use a generous foam cap for the finish. Classic, please.",
+    "base": "cold brew",
+    "milk": "whole milk",
+    "sweetness": "extra sweet",
+    "topping": "foam",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "Please make me a green-tea matcha with oat milk as the milk choice, with no sweetness added, and finish it with a plain top. Keep it soft and comforting.",
+    "base": "matcha",
+    "milk": "oat milk",
+    "sweetness": "no sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "Let's go with a smooth milk tea made dairy-free with almond milk, low sweetness, and a serving of pearls. Give it a lively pick-me-up vibe.",
+    "base": "milk tea",
+    "milk": "almond milk",
+    "sweetness": "light sugar",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "Here is my custom order: an iced espresso with whole milk, with no sweetener mixed in, with black boba pearls. Go for a clean, familiar style.",
+    "base": "espresso",
+    "milk": "whole milk",
+    "sweetness": "no sugar",
+    "topping": "boba",
+    "vibe": "classic"
+  },
+  {
+    "utterance": "My ideal cup right now is a cold-brew coffee using creamy oat milk, a small amount of sugar, with chewy coffee jelly. I want a mellow, rainy-day feel.",
+    "base": "cold brew",
+    "milk": "oat milk",
+    "sweetness": "light sugar",
+    "topping": "coffee jelly",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "My order is a matcha latte-style drink made with almond instead of dairy, the standard sugar option, with foam on top. Make it a strong study-session order.",
+    "base": "matcha",
+    "milk": "almond milk",
+    "sweetness": "regular sugar",
+    "topping": "foam",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "I'd love a fragrant milk tea kept free of additional milk, extra sweet, finished with no extras. Make it playful and experimental.",
+    "base": "milk tea",
+    "milk": "none",
+    "sweetness": "extra sweet",
+    "topping": "none",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "I'm in the mood for a punchy espresso using barista oat milk, classic sweetness, with no finishing topping. Give it a snug café-corner mood.",
+    "base": "espresso",
+    "milk": "oat milk",
+    "sweetness": "regular sugar",
+    "topping": "none",
+    "vibe": "cozy"
+  },
+  {
+    "utterance": "A tall cold brew with a nutty almond-milk finish, extra sugar, with a scoop of boba, please. Keep it bold and focused.",
+    "base": "cold brew",
+    "milk": "almond milk",
+    "sweetness": "extra sweet",
+    "topping": "boba",
+    "vibe": "energetic"
+  },
+  {
+    "utterance": "One simple matcha plain and without milk, with the sugar option set to zero, with the coffee-jelly topping, please. Make it adventurous.",
+    "base": "matcha",
+    "milk": "none",
+    "sweetness": "no sugar",
+    "topping": "coffee jelly",
+    "vibe": "experimental"
+  },
+  {
+    "utterance": "For something different, give me a milk tea with a splash of whole milk, half the usual sugar, with plenty of foam. I want a no-surprises kind of drink.",
+    "base": "milk tea",
+    "milk": "whole milk",
+    "sweetness": "light sugar",
+    "topping": "foam",
+    "vibe": "classic"
+  }
+]

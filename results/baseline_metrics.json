@@ -1,0 +1,451 @@
+{
+  "dataset": {
+    "path": "data/order_dataset.json",
+    "record_count": 200,
+    "test_size": 0.25,
+    "random_state": 42
+  },
+  "models": {
+    "base": {
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "support": 50.0,
+      "class_labels": [
+        "cold brew",
+        "espresso",
+        "matcha",
+        "milk tea"
+      ],
+      "classification_report": {
+        "cold brew": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 13.0
+        },
+        "espresso": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "matcha": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 13.0
+        },
+        "milk tea": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "cold brew",
+          "espresso",
+          "matcha",
+          "milk tea"
+        ],
+        "matrix": [
+          [
+            13,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            12,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            13,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            12
+          ]
+        ]
+      }
+    },
+    "milk": {
+      "accuracy": 0.94,
+      "macro_precision": 0.9450549450549451,
+      "macro_recall": 0.9423076923076923,
+      "macro_f1": 0.9399358974358973,
+      "weighted_f1": 0.9398717948717951,
+      "support": 50.0,
+      "class_labels": [
+        "almond milk",
+        "none",
+        "oat milk",
+        "whole milk"
+      ],
+      "classification_report": {
+        "almond milk": {
+          "precision": 1.0,
+          "recall": 0.8461538461538461,
+          "f1-score": 0.9166666666666666,
+          "support": 13.0
+        },
+        "none": {
+          "precision": 0.9230769230769231,
+          "recall": 1.0,
+          "f1-score": 0.96,
+          "support": 12.0
+        },
+        "oat milk": {
+          "precision": 1.0,
+          "recall": 0.9230769230769231,
+          "f1-score": 0.96,
+          "support": 13.0
+        },
+        "whole milk": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1-score": 0.9230769230769231,
+          "support": 12.0
+        },
+        "accuracy": 0.94,
+        "macro avg": {
+          "precision": 0.9450549450549451,
+          "recall": 0.9423076923076923,
+          "f1-score": 0.9399358974358973,
+          "support": 50.0
+        },
+        "weighted avg": {
+          "precision": 0.9472527472527473,
+          "recall": 0.94,
+          "f1-score": 0.9398717948717951,
+          "support": 50.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "almond milk",
+          "none",
+          "oat milk",
+          "whole milk"
+        ],
+        "matrix": [
+          [
+            11,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            12,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            12
+          ]
+        ]
+      }
+    },
+    "sweetness": {
+      "accuracy": 0.9,
+      "macro_precision": 0.9006410256410258,
+      "macro_recall": 0.9006410256410257,
+      "macro_f1": 0.8998717948717949,
+      "weighted_f1": 0.9,
+      "support": 50.0,
+      "class_labels": [
+        "extra sweet",
+        "light sugar",
+        "no sugar",
+        "regular sugar"
+      ],
+      "classification_report": {
+        "extra sweet": {
+          "precision": 0.8461538461538461,
+          "recall": 0.8461538461538461,
+          "f1-score": 0.8461538461538461,
+          "support": 13.0
+        },
+        "light sugar": {
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.8333333333333334,
+          "support": 12.0
+        },
+        "no sugar": {
+          "precision": 1.0,
+          "recall": 0.9230769230769231,
+          "f1-score": 0.96,
+          "support": 13.0
+        },
+        "regular sugar": {
+          "precision": 0.9230769230769231,
+          "recall": 1.0,
+          "f1-score": 0.96,
+          "support": 12.0
+        },
+        "accuracy": 0.9,
+        "macro avg": {
+          "precision": 0.9006410256410258,
+          "recall": 0.9006410256410257,
+          "f1-score": 0.8998717948717949,
+          "support": 50.0
+        },
+        "weighted avg": {
+          "precision": 0.9015384615384616,
+          "recall": 0.9,
+          "f1-score": 0.9,
+          "support": 50.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "extra sweet",
+          "light sugar",
+          "no sugar",
+          "regular sugar"
+        ],
+        "matrix": [
+          [
+            11,
+            2,
+            0,
+            0
+          ],
+          [
+            2,
+            10,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            12,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            12
+          ]
+        ]
+      }
+    },
+    "topping": {
+      "accuracy": 0.9,
+      "macro_precision": 0.9077380952380952,
+      "macro_recall": 0.9006410256410257,
+      "macro_f1": 0.9002641802641802,
+      "weighted_f1": 0.8996313908313909,
+      "support": 50.0,
+      "class_labels": [
+        "boba",
+        "coffee jelly",
+        "foam",
+        "none"
+      ],
+      "classification_report": {
+        "boba": {
+          "precision": 0.9166666666666666,
+          "recall": 0.8461538461538461,
+          "f1-score": 0.88,
+          "support": 13.0
+        },
+        "coffee jelly": {
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1-score": 0.9090909090909091,
+          "support": 12.0
+        },
+        "foam": {
+          "precision": 0.8571428571428571,
+          "recall": 0.9230769230769231,
+          "f1-score": 0.8888888888888888,
+          "support": 13.0
+        },
+        "none": {
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1-score": 0.9230769230769231,
+          "support": 12.0
+        },
+        "accuracy": 0.9,
+        "macro avg": {
+          "precision": 0.9077380952380952,
+          "recall": 0.9006410256410257,
+          "f1-score": 0.9002641802641802,
+          "support": 50.0
+        },
+        "weighted avg": {
+          "precision": 0.9069047619047619,
+          "recall": 0.9,
+          "f1-score": 0.8996313908313909,
+          "support": 50.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "boba",
+          "coffee jelly",
+          "foam",
+          "none"
+        ],
+        "matrix": [
+          [
+            11,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            10,
+            0,
+            2
+          ],
+          [
+            1,
+            0,
+            12,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            12
+          ]
+        ]
+      }
+    },
+    "vibe": {
+      "accuracy": 0.88,
+      "macro_precision": 0.8934523809523809,
+      "macro_recall": 0.8798076923076923,
+      "macro_f1": 0.8787301587301587,
+      "weighted_f1": 0.87895873015873,
+      "support": 50.0,
+      "class_labels": [
+        "classic",
+        "cozy",
+        "energetic",
+        "experimental"
+      ],
+      "classification_report": {
+        "classic": {
+          "precision": 0.8571428571428571,
+          "recall": 0.9230769230769231,
+          "f1-score": 0.8888888888888888,
+          "support": 13.0
+        },
+        "cozy": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1-score": 0.8571428571428571,
+          "support": 12.0
+        },
+        "energetic": {
+          "precision": 0.9166666666666666,
+          "recall": 0.8461538461538461,
+          "f1-score": 0.88,
+          "support": 13.0
+        },
+        "experimental": {
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1-score": 0.8888888888888888,
+          "support": 12.0
+        },
+        "accuracy": 0.88,
+        "macro avg": {
+          "precision": 0.8934523809523809,
+          "recall": 0.8798076923076923,
+          "f1-score": 0.8787301587301587,
+          "support": 50.0
+        },
+        "weighted avg": {
+          "precision": 0.8931904761904762,
+          "recall": 0.88,
+          "f1-score": 0.87895873015873,
+          "support": 50.0
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "classic",
+          "cozy",
+          "energetic",
+          "experimental"
+        ],
+        "matrix": [
+          [
+            12,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            9,
+            0,
+            3
+          ],
+          [
+            2,
+            0,
+            11,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            12
+          ]
+        ]
+      }
+    }
+  },
+  "summary": {
+    "average_accuracy": 0.924,
+    "average_macro_f1": 0.9237604062604061,
+    "best_attribute_by_macro_f1": "base",
+    "lowest_attribute_by_macro_f1": "vibe"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "annotation_note": "Ambiguity examples use a reviewed expected interpretation for diagnostic scoring; ambiguous language does not have a uniquely objective target.",
+  "records": [
+    { "category": "normal", "utterance": "I'd like an espresso with oat milk, light sugar, boba, and a cozy vibe.", "base": "espresso", "milk": "oat milk", "sweetness": "light sugar", "topping": "boba", "vibe": "cozy" },
+    { "category": "normal", "utterance": "Please make cold brew with whole milk, extra sweet, foam, and an energetic mood.", "base": "cold brew", "milk": "whole milk", "sweetness": "extra sweet", "topping": "foam", "vibe": "energetic" },
+    { "category": "normal", "utterance": "I'd like matcha with almond milk, regular sugar, coffee jelly, and an experimental vibe.", "base": "matcha", "milk": "almond milk", "sweetness": "regular sugar", "topping": "coffee jelly", "vibe": "experimental" },
+    { "category": "normal", "utterance": "Make milk tea with no milk, no sugar, no topping, and a classic mood.", "base": "milk tea", "milk": "none", "sweetness": "no sugar", "topping": "none", "vibe": "classic" },
+    { "category": "normal", "utterance": "One espresso with whole milk, regular sweetness, foam, and a cozy feel.", "base": "espresso", "milk": "whole milk", "sweetness": "regular sugar", "topping": "foam", "vibe": "cozy" },
+
+    { "category": "paraphrase", "utterance": "Could I get a coffee shot with almond milk, barely sweet, pearls, and a homey feel?", "base": "espresso", "milk": "almond milk", "sweetness": "light sugar", "topping": "boba", "vibe": "cozy" },
+    { "category": "paraphrase", "utterance": "A chilled steeped coffee with oat milk, dessert-level sweetness, jelly, and a lively mood.", "base": "cold brew", "milk": "oat milk", "sweetness": "extra sweet", "topping": "coffee jelly", "vibe": "energetic" },
+    { "category": "paraphrase", "utterance": "Green tea powder with almond milk, unsweetened, a soft cap, and a curious mood.", "base": "matcha", "milk": "almond milk", "sweetness": "no sugar", "topping": "foam", "vibe": "experimental" },
+    { "category": "paraphrase", "utterance": "A pearl tea with dairy milk, a restrained sweetness, no garnish, and a relaxed feel.", "base": "milk tea", "milk": "whole milk", "sweetness": "light sugar", "topping": "none", "vibe": "cozy" },
+    { "category": "paraphrase", "utterance": "Give me a bold coffee over ice, no added milk, the usual sugar, and coffee jelly; keep it traditional.", "base": "cold brew", "milk": "none", "sweetness": "regular sugar", "topping": "coffee jelly", "vibe": "classic" },
+
+    { "category": "typo", "utterance": "Need an expresso with oat milk, not too sweeet, boba, cozy vibes.", "base": "espresso", "milk": "oat milk", "sweetness": "light sugar", "topping": "boba", "vibe": "cozy" },
+    { "category": "typo", "utterance": "Cold brew, whole milkk, extra sweet, foamm, energetic.", "base": "cold brew", "milk": "whole milk", "sweetness": "extra sweet", "topping": "foam", "vibe": "energetic" },
+    { "category": "typo", "utterance": "Matcha w almond milk, no sugarr, no topping, experimental.", "base": "matcha", "milk": "almond milk", "sweetness": "no sugar", "topping": "none", "vibe": "experimental" },
+    { "category": "typo", "utterance": "Milktea w oat milk, regular sugar, coffe jelly, cozy plz.", "base": "milk tea", "milk": "oat milk", "sweetness": "regular sugar", "topping": "coffee jelly", "vibe": "cozy" },
+    { "category": "typo", "utterance": "Espresso w almond, light sugar, coffee jely, classic mood.", "base": "espresso", "milk": "almond milk", "sweetness": "light sugar", "topping": "coffee jelly", "vibe": "classic" },
+
+    { "category": "slang", "utterance": "Need a strong espresso, oat milk, just a lil sweet, boba, chill vibe.", "base": "espresso", "milk": "oat milk", "sweetness": "light sugar", "topping": "boba", "vibe": "cozy" },
+    { "category": "slang", "utterance": "Hit me with iced cold brew, whole milk, hella sweet, foam, high energy.", "base": "cold brew", "milk": "whole milk", "sweetness": "extra sweet", "topping": "foam", "vibe": "energetic" },
+    { "category": "slang", "utterance": "Matcha with almond milk, zero sugar, jelly, low-key cozy.", "base": "matcha", "milk": "almond milk", "sweetness": "no sugar", "topping": "coffee jelly", "vibe": "cozy" },
+    { "category": "slang", "utterance": "Milk tea, oat milk, regular sugar, boba, classic vibes.", "base": "milk tea", "milk": "oat milk", "sweetness": "regular sugar", "topping": "boba", "vibe": "classic" },
+    { "category": "slang", "utterance": "Espresso, no milk, unsweetened, jelly, kinda experimental.", "base": "espresso", "milk": "none", "sweetness": "no sugar", "topping": "coffee jelly", "vibe": "experimental" },
+
+    { "category": "negation", "utterance": "Espresso, no milk at all, no sugar, no topping, keep it classic.", "base": "espresso", "milk": "none", "sweetness": "no sugar", "topping": "none", "vibe": "classic" },
+    { "category": "negation", "utterance": "Cold brew with oat milk, not extra sweet but only lightly sweetened, no topping, energetic.", "base": "cold brew", "milk": "oat milk", "sweetness": "light sugar", "topping": "none", "vibe": "energetic" },
+    { "category": "negation", "utterance": "Matcha, not whole milk; use almond milk, not unsweetened, no boba or jelly, experimental.", "base": "matcha", "milk": "almond milk", "sweetness": "regular sugar", "topping": "none", "vibe": "experimental" },
+    { "category": "negation", "utterance": "Milk tea, no oat milk; use whole milk, no extra sugar, no foam, cozy.", "base": "milk tea", "milk": "whole milk", "sweetness": "light sugar", "topping": "none", "vibe": "cozy" },
+    { "category": "negation", "utterance": "Espresso, not almond milk but oat milk, no sugar, not boba but coffee jelly, classic.", "base": "espresso", "milk": "oat milk", "sweetness": "no sugar", "topping": "coffee jelly", "vibe": "classic" },
+
+    { "category": "ambiguity", "utterance": "Make me a sweet espresso with plant milk and something fun on top; maybe cozy.", "base": "espresso", "milk": "oat milk", "sweetness": "extra sweet", "topping": "boba", "vibe": "cozy" },
+    { "category": "ambiguity", "utterance": "A cold, creamy drink to surprise me. Not too intense.", "base": "cold brew", "milk": "whole milk", "sweetness": "regular sugar", "topping": "foam", "vibe": "experimental" },
+    { "category": "ambiguity", "utterance": "Tea-ish, lightly sweet, add something chewy, make it calm.", "base": "milk tea", "milk": "whole milk", "sweetness": "light sugar", "topping": "boba", "vibe": "cozy" },
+    { "category": "ambiguity", "utterance": "Coffee, no sugar or maybe just a little, dairy-free, keep it mellow.", "base": "espresso", "milk": "oat milk", "sweetness": "light sugar", "topping": "none", "vibe": "cozy" },
+    { "category": "ambiguity", "utterance": "Matcha or milk tea, no sugar, and a soft topping; something experimental.", "base": "matcha", "milk": "almond milk", "sweetness": "no sugar", "topping": "foam", "vibe": "experimental" },
+
+    { "category": "out_of_distribution", "utterance": "Polar research station ration: iced espresso, oat milk, zero syrup, boba, sterile classic profile.", "base": "espresso", "milk": "oat milk", "sweetness": "no sugar", "topping": "boba", "vibe": "classic" },
+    { "category": "out_of_distribution", "utterance": "For an underwater lab menu, cold-brew coffee with almond milk, maximum sweetness, coffee jelly, high energy.", "base": "cold brew", "milk": "almond milk", "sweetness": "extra sweet", "topping": "coffee jelly", "vibe": "energetic" },
+    { "category": "out_of_distribution", "utterance": "Museum tasting protocol: ceremonial matcha, no milk, standard sugar, foam, avant-garde mood.", "base": "matcha", "milk": "none", "sweetness": "regular sugar", "topping": "foam", "vibe": "experimental" },
+    { "category": "out_of_distribution", "utterance": "Robot quality-control ticket: milk tea, whole milk, low sugar, no topping, classic profile.", "base": "milk tea", "milk": "whole milk", "sweetness": "light sugar", "topping": "none", "vibe": "classic" },
+    { "category": "out_of_distribution", "utterance": "Weather balloon cafe request: espresso, oat milk, regular sweetness, pearls, experimental presentation.", "base": "espresso", "milk": "oat milk", "sweetness": "regular sugar", "topping": "boba", "vibe": "experimental" }
+  ]
+}

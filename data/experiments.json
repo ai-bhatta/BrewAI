@@ -1,0 +1,43 @@
+{
+  "minimum_exploratory_sessions_per_variant": 10,
+  "experiments": {
+    "timer_seconds": {
+      "hypothesis": "Increasing a round timer from 30 to 40 seconds will improve completion rate.",
+      "primary_metric": "completion_rate",
+      "guardrail_metric": "average_score",
+      "game_mode_filter": "game",
+      "variants": {
+        "A": { "label": "30 seconds", "value": 30 },
+        "B": { "label": "40 seconds", "value": 40 }
+      }
+    },
+    "hint_penalty": {
+      "hypothesis": "A smaller penalty for stronger hints will increase help usage without reducing order accuracy.",
+      "primary_metric": "hint_usage_rate",
+      "guardrail_metric": "order_accuracy",
+      "variants": {
+        "A": { "label": "Current costs", "value": { "1": 1, "2": 2, "3": 3 } },
+        "B": { "label": "Reduced costs", "value": { "1": 1, "2": 1, "3": 2 } }
+      }
+    },
+    "clarification_time_penalty": {
+      "hypothesis": "Reducing clarification cost from 3 to 2 seconds will increase clarification use.",
+      "primary_metric": "clarification_usage_rate",
+      "guardrail_metric": "order_accuracy",
+      "variants": {
+        "A": { "label": "3 seconds", "value": 3 },
+        "B": { "label": "2 seconds", "value": 2 }
+      }
+    },
+    "adaptive_policy": {
+      "hypothesis": "A contextual-bandit policy will maintain player success while reducing hint dependency compared with the hand-written heuristic.",
+      "primary_metric": "successful_orders_without_hints_rate",
+      "guardrail_metric": "completion_rate",
+      "guardrail_metrics": ["completion_rate", "customer_loss_rate", "clarification_usage_rate", "average_response_time_seconds"],
+      "variants": {
+        "A": { "label": "Heuristic", "value": "heuristic" },
+        "B": { "label": "Contextual bandit", "value": "contextual_bandit" }
+      }
+    }
+  }
+}

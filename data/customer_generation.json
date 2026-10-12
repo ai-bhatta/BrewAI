@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "mode": "auto",
+  "base_url": "http://127.0.0.1:11434",
+  "model": "qwen3:4b",
+  "timeout_seconds": 4,
+  "maximum_request_characters": 220
+}

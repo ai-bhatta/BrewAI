@@ -1,0 +1,7 @@
+[
+  {"id":"executive_easy","persona":"executive","difficulty":"easy","canonical_recipe":{"base":"espresso","milk":"whole milk","sweetness":"regular sugar","topping":"foam","vibe":"classic"}},
+  {"id":"student_slang","persona":"sleep_deprived_student","difficulty":"slang","canonical_recipe":{"base":"cold brew","milk":"oat milk","sweetness":"light sugar","topping":"boba","vibe":"energetic"}},
+  {"id":"influencer_ambiguous","persona":"influencer","difficulty":"ambiguous","canonical_recipe":{"base":"matcha","milk":"almond milk","sweetness":"extra sweet","topping":"foam","vibe":"experimental"}},
+  {"id":"snob_negation","persona":"coffee_snob","difficulty":"negation","canonical_recipe":{"base":"espresso","milk":"oat milk","sweetness":"no sugar","topping":"coffee jelly","vibe":"classic"}},
+  {"id":"indecisive_multi_clue","persona":"indecisive_customer","difficulty":"multi_clue","canonical_recipe":{"base":"milk tea","milk":"none","sweetness":"light sugar","topping":"boba","vibe":"cozy"}}
+]

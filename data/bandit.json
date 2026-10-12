@@ -1,0 +1,17 @@
+{
+  "epsilon": 0.1,
+  "minimum_bandit_observations": 10,
+  "learning_rate": 0.08,
+  "reward": {
+    "correct_order": 0.6,
+    "reasonable_response": 0.2,
+    "trivial_response": 0.05,
+    "incorrect_order": -0.5,
+    "customer_lost": -0.8,
+    "hint_each": -0.08,
+    "clarification_each": -0.03,
+    "trivial_order_penalty": -0.15,
+    "fast_seconds": 3,
+    "slow_seconds": 22
+  }
+}
